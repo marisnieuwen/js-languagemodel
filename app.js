@@ -107,7 +107,7 @@ function testNGrams() {
     .then((response) => response.text())
     .then((text) => {
       // Input en aantal woorden in output vaststellen
-      const input = "space";
+      const input = "he";
       const outputWords = 25;
 
       // 2-gram voorbeeld
