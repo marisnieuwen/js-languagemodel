@@ -92,7 +92,7 @@ fetch("./txt/2001_A_Space_Odyssey_-_Arthur_C_Clarke.txt")
     let n = input.split(" ").length + 1;
     let ngramsList = createNGrams(n, text);
     let counts = countNGrams(ngramsList);
-    let outputSentence = constructSentence(input, counts, 26);
+    let outputSentence = constructSentence(input, counts, 25);
 
     // console.log(counts);
     console.log(outputSentence);
@@ -166,7 +166,7 @@ document.getElementById("input-form").addEventListener("submit", (event) => {
         const n = input.split(" ").length + 1;
         const ngramsList = createNGrams(n, text);
         const counts = countNGrams(ngramsList);
-        const outputSentence = constructSentence(input, counts, 26);
+        const outputSentence = constructSentence(input, counts, 25);
         printMessage(`Bot: ${outputSentence}`);
       })
       .catch((error) => {
