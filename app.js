@@ -85,7 +85,7 @@ function extractWordsByNgram(sentence, n) {
 }
 
 // Haal tekstbestand op en genereer een zin op basis van de input
-fetch("2001_A_Space_Odyssey_-_Arthur_C_Clarke.txt")
+fetch("./txt/2001_A_Space_Odyssey_-_Arthur_C_Clarke.txt")
   .then((response) => response.text())
   .then((text) => {
     let input = "in space";
@@ -103,7 +103,7 @@ fetch("2001_A_Space_Odyssey_-_Arthur_C_Clarke.txt")
 
 // Testfunctie om verschillende n-grams te demonstreren voor assesment
 function testNGrams() {
-  fetch("2001_A_Space_Odyssey_-_Arthur_C_Clarke.txt")
+  fetch("./txt/2001_A_Space_Odyssey_-_Arthur_C_Clarke.txt")
     .then((response) => response.text())
     .then((text) => {
       // Input en aantal woorden in output vaststellen
@@ -160,7 +160,7 @@ document.getElementById("input-form").addEventListener("submit", (event) => {
     printMessage(`You: ${input}`);
     inputField.value = "";
 
-    fetch("2001_A_Space_Odyssey_-_Arthur_C_Clarke.txt")
+    fetch("./txt/2001_A_Space_Odyssey_-_Arthur_C_Clarke.txt")
       .then((response) => response.text())
       .then((text) => {
         const n = input.split(" ").length + 1;
