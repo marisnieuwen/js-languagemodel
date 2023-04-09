@@ -72,12 +72,3 @@ body {
 #sendButton:hover {
   background-color: #218838;
 }
-
-.botmsg {
-  background-color: #eee;
-  padding: 5px;
-  margin: 5px;
-  border-radius: 5px;
-  width: 80%;
-  text-align: left;
-}
